@@ -19,7 +19,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"https://wiki.tf2classic.com/kachemak/tf2classic.zip",
-        "UpdateSourceTarget":"{{$FullBaseDir}}tf2classic",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true
     },
