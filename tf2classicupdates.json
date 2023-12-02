@@ -20,7 +20,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"chmod +x TF2CDownloaderLinux && TF2CDownloaderLinux --update {{$FullBaseDir}}"
+        "UpdateSourceArgs":"-c 'chmod +x TF2CDownloaderLinux && TF2CDownloaderLinux --update'"
     },
     {
         "UpdateStageName":"Binary Symlinks and Deletion",
