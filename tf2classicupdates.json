@@ -12,7 +12,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"https://github.com/tf2classic/TF2CDownloader/releases/latest/download/TF2CDownloaderLinux",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
+        "UpdateSourceTarget":"{{$FullBaseDir}}tf2classic",
         "OverwriteExistingFiles":true
     },
     {
