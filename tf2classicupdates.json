@@ -12,7 +12,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"https://github.com/tf2classic/TF2CDownloader/releases/latest/download/TF2CDownloaderLinux",
-        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":true
     },
     {
@@ -20,7 +20,14 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"chmod +x ./TF2CDownloaderLinux && ./TF2CDownloaderLinux --install {{$FullRootDir}}"
+        "UpdateSourceArgs":"chmod +x TF2CDownloaderLinux && TF2CDownloaderLinux --update {{$FullBaseDir}}"
+    },
+    {
+        "UpdateStageName":"Binary Symlinks and Deletion",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'cd ./tf2classic/server/bin && ln -sf datacache_srv.so datacache.so && ln -sf dedicated_srv.so dedicated.so && ln -sf engine_srv.so engine.so && ln -sf materialsystem_srv.so materialsystem.so && ln -sf replay_srv.so replay.so && ln -sf scenefilecache_srv.so scenefilecache.so && ln -sf shaderapiempty_srv.so shaderapiempty.so && ln -sf soundemittersystem_srv.so soundemittersystem.so && ln -sf studiorender_srv.so studiorender.so && ln -sf vphysics_srv.so vphysics.so && rm -f libstdc++.so.6 && cd ../tf2classic/bin && ln -sf server.so server_srv.so'"
     },
     {
         "UpdateStageName":"Server.cfg Template File Download",

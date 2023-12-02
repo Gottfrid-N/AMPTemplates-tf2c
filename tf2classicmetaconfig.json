@@ -3,6 +3,6 @@
         "ConfigFile":"tf2classic/cfg/server.cfg",
         "AutoMap":true,
         "ConfigType":"template",
-        "ConfigFileTemplate":"tf2c/AMP_server.cfg"
+        "ConfigFileTemplate":"tf2classic/AMP_server.cfg"
     }
 ]
