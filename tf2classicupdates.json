@@ -27,7 +27,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'chmod u+x {{$FullBaseDir}}TF2CDownloaderLinux && {{$FullBaseeDir}}TF2CDownloaderLinux --install ./tf2classic'"
+        "UpdateSourceArgs":"-c 'chmod u+x ./tf2classic/server/TF2CDownloaderLinux && ./tf2classic/server/TF2CDownloaderLinux --install'"
     },
     {
         "UpdateStageName":"Server.cfg Template File Download",
