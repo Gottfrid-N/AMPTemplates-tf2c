@@ -26,7 +26,7 @@
         "UpdateStageName":"Make TF2C Updater Executable",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"SetExecutableFlag",
-        "UpdateSourceArgs":"{{$FullBaseeDir}}TF2CDownloaderLinux"
+        "UpdateSourceArgs":"TF2CDownloaderLinux"
     },
     {
         "UpdateStageName":"TF2C Updater",
