@@ -8,7 +8,7 @@
         "UpdateSourceTarget":"{{$FullBaseDir}}"
     },
     {
-        "UpdateStageName":"7-Zip Download",
+        "UpdateStageName":"TF2 Classic Updater Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"https://github.com/tf2classic/TF2CDownloader/releases/latest/download/TF2CDownloaderLinux",
@@ -16,11 +16,11 @@
         "OverwriteExistingFiles":true
     },
     {
-        "UpdateStageName":"7-Zip Files Extract",
+        "UpdateStageName":"TF2 Classic Updater",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"TF2CDownloaderLinux --update {{$FullBaseDir}}"
+        "UpdateSourceArgs":"chmod +x ./TF2CDownloaderLinux && ./TF2CDownloaderLinux --install ./tf2classic"
     },
     {
         "UpdateStageName":"Server.cfg Template File Download",
