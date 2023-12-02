@@ -12,15 +12,21 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"https://github.com/tf2classic/TF2CDownloader/releases/latest/download/TF2CDownloaderLinux",
-        "UpdateSourceTarget":"{{$FullBaseDir}}tf2classic",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":true
+    },
+    {
+        "UpdateStageName":"Make TF2C Updater Executable",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"SetExecutableFlag",
+        "UpdateSourceArgs":"{{$FullBaseeDir}}TF2CDownloaderLinux"
     },
     {
         "UpdateStageName":"TF2 Classic Updater",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'chmod +x ./TF2CDownloaderLinux && ./TF2CDownloaderLinux --update'"
+        "UpdateSourceArgs":"-c './TF2CDownloaderLinux --update'"
     },
     {
         "UpdateStageName":"Binary Symlinks and Deletion",
