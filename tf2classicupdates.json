@@ -23,13 +23,6 @@
         "OverwriteExistingFiles":true
     },
     {
-        "UpdateStageName":"TF2C Updater",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'chmod u+x ./tf2classic/server/TF2CDownloaderLinux && ./tf2classic/server/TF2CDownloaderLinux --install'"
-    },
-    {
         "UpdateStageName":"Server.cfg Template File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
@@ -37,5 +30,12 @@
         "UpdateSourceArgs":"AMP_server.cfg",
         "UpdateSourceTarget":"{{$FullRootDir}}",
         "OverwriteExistingFiles":true
+    },
+    {
+        "UpdateStageName":"TF2C Updater",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'chmod u+x ./tf2classic/server/TF2CDownloaderLinux && ./tf2classic/server/TF2CDownloaderLinux --install'"
     }
 ]
