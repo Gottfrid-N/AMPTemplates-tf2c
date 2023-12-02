@@ -23,17 +23,11 @@
         "OverwriteExistingFiles":true
     },
     {
-        "UpdateStageName":"Make TF2C Updater Executable",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"SetExecutableFlag",
-        "UpdateSourceArgs":"TF2CDownloaderLinux"
-    },
-    {
         "UpdateStageName":"TF2C Updater",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c '{{$FullBaseeDir}}TF2CDownloaderLinux --update'"
+        "UpdateSourceArgs":"-c 'chmod u+x {{$FullBaseDir}} && {{$FullBaseeDir}}TF2CDownloaderLinux --update'"
     },
     {
         "UpdateStageName":"Server.cfg Template File Download",
