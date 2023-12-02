@@ -22,11 +22,11 @@
         "UpdateSourceArgs":"{{$FullBaseeDir}}TF2CDownloaderLinux"
     },
     {
-        "UpdateStageName":"TF2 Classic Updater",
+        "UpdateStageName":"TF2C Updater",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c './TF2CDownloaderLinux --update'"
+        "UpdateSourceArgs":"-c '{{$FullBaseeDir}}TF2CDownloaderLinux --update'"
     },
     {
         "UpdateStageName":"Binary Symlinks and Deletion",
