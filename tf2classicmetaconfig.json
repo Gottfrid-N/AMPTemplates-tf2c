@@ -1,8 +1,8 @@
 [
     {
-        "ConfigFile":"pf2/cfg/server.cfg",
+        "ConfigFile":"tf2classic/cfg/server.cfg",
         "AutoMap":true,
         "ConfigType":"template",
-        "ConfigFileTemplate":"pre-fortress2/AMP_server.cfg"
+        "ConfigFileTemplate":"tf2c/AMP_server.cfg"
     }
 ]
