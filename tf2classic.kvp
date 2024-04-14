@@ -1,4 +1,3 @@
-GenericModule.Meta.AppConfigId=Team Fortress 2 Classic
 Meta.DisplayName=Team Fortress 2 Classic
 Meta.Description=Team Fortress 2 Classic Dedicated Server
 Meta.OS=Linux
@@ -99,3 +98,4 @@ Limits.SleepDelayMinutes=5
 Limits.DozeDelay=2
 Limits.AutoRetryCount=5
 Limits.SleepStartThresholdSeconds=25
+GenericModule.Meta.AppConfigId=Team Fortress 2 Classic
