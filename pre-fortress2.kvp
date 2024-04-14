@@ -1,5 +1,6 @@
 Meta.DisplayName=Pre-Fortress 2
 Meta.Description=Pre-Fortress 2 Dedicated Server
+Meta.AppConfigId=01748a94-88f5-43b8-b2876-458ccb83062e
 Meta.OS=Windows, Linux
 Meta.AarchSupport=NotSupported
 Meta.Arch=x86_64
